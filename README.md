@@ -26,7 +26,15 @@ node update-opencode-free-models.mjs
 脚本会：
 1. 从 OpenRouter API 获取所有模型
 2. 应用过滤条件
-3. 更新 `/Users/linnahan/.config/opencode/opencode.json` 中的模型
+3. 更新 OpenCode 配置文件中的模型
+
+## 配置路径
+
+默认使用 `~/.config/opencode/opencode.json`，也可以通过环境变量 `OPencode_CONFIG_PATH` 指定路径：
+
+```bash
+OPencode_CONFIG_PATH=/path/to/opencode.json node update-opencode-free-models.mjs
+```
 
 ## 要求
 
@@ -67,7 +75,15 @@ node update-opencode-free-models.mjs
 The script will:
 1. Fetch all models from OpenRouter API
 2. Apply filters
-3. Update `/Users/linnahan/.config/opencode/opencode.json` with the filtered models
+3. Update the OpenCode configuration file with the filtered models
+
+## Configuration Path
+
+By default, the script uses `~/.config/opencode/opencode.json`. You can specify a custom path via the `OPencode_CONFIG_PATH` environment variable:
+
+```bash
+OPencode_CONFIG_PATH=/path/to/opencode.json node update-opencode-free-models.mjs
+```
 
 ## Requirements
 
